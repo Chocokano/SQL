@@ -74,6 +74,7 @@ INSERT INTO `bank_transaction` (`t_a_no`, `t_dist`, `t_amount`, `t_datetime`) VA
 INSERT INTO `bank_transaction` (`t_a_no`, `t_dist`, `t_amount`, `t_datetime`) VALUES ('101-11-2003', 3, 0, NOW());
 INSERT INTO `bank_transaction` (`t_a_no`, `t_dist`, `t_amount`, `t_datetime`) VALUES ('101-11-1003', 1, 75000, NOW());
 
+
 #실습 2-4. 모든 계좌를 조회하시오.
 SELECT * FROM `bank_account`;
 
@@ -238,3 +239,4 @@ JOIN `bank_customer` AS c ON b.a_c_no = c.c_no
 WHERE `t_dist` IN(1, 2) AND `c_dist` = 1
 GROUP BY `c_no`
 ORDER BY `t_dist`, `거래건수` desc;
+
