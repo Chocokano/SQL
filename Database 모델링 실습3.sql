@@ -10,6 +10,7 @@ insert into `Users` values('user8','신사임당','1965-10-21','F','010-5101-196
 insert into `Users` values('user9','이이','1972-11-28','M','010-6101-1972','leelee@nete.com',3400 ,3 ,'부산', now());
 insert into `Users` values('user10','허난설헌','1992-09-07','F','010-7103-1992',null, 4100, 3,'광주', now());
 
+
 #Points
 insert into `Points` values( 1, 'user1', 1000 , '회원가입 1000 적립',now());
 insert into `Points` values( 2, 'user1', 6000, '상품구매 5% 적립',now());
@@ -21,6 +22,7 @@ insert into `Points` values( 7, 'user2', 2000, '이벤트 응모 2000 적립',no
 insert into `Points` values( 8, 'user2', 2615, '상품구매 5% 적립',now());
 insert into `Points` values( 9, 'user3', 1500, '이벤트 응모 1500 적립',now());
 insert into `Points` values(10, 'user6', 15840, '상품구매 2% 적립',now());
+
 
 #Sellers
 insert into `Sellers` values( 10001, '(주)다팔아', '01-201-1976', '정우성', '서울');
