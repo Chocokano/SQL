@@ -9,14 +9,15 @@ GRANT ALL PRIVILEGES ON `java1_board`.* TO 'java1_board'@'%';
 FLUSH PRIVILEGES;
 
 # 회원 테이블 생성
+
 CREATE TABLE `board_user` (
 	`uid`		VARCHAR(20) PRIMARY KEY,
 	`pass`	VARCHAR(255),
 	`name`	VARCHAR(20),
 	`nick`	VARCHAR(20) UNIQUE,
-	`email`	VARCHAR(20) UNIQUE,
+	`email`	VARCHAR(100) UNIQUE,
 	`hp`		CHAR(13) UNIQUE,
-	`grade`	TINYINT,
+	`grade`	TINYINT DEFAULT 2,
 	`zip`		CHAR(5),
 	`addr1`	VARCHAR(255),
 	`addr2`	VARCHAR(255),
